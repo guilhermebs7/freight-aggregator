@@ -2,6 +2,7 @@ package com.guilherme.freight_aggregator.domain.model;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.UUID;
 
 public class FreightQuote {
     private final String id;
@@ -11,13 +12,13 @@ public class FreightQuote {
     private final List<FreightOption> opcao;
     private final LocalDateTime criadoEm;
 
-    public FreightQuote(String id, Address origem, Address destino, PackageDimension dimensaoEmbalagem, List<FreightOption> opcao, LocalDateTime criadoEm) {
-        this.id = id;
+    public FreightQuote( Address origem, Address destino, PackageDimension dimensaoEmbalagem, List<FreightOption> opcao, LocalDateTime criadoEm) {
+        this.id = UUID.randomUUID().toString();
         this.origem = origem;
         this.destino = destino;
         this.dimensaoEmbalagem = dimensaoEmbalagem;
         this.opcao = opcao;
-        this.criadoEm = criadoEm;
+        this.criadoEm = LocalDateTime.now();
     }
 
     public String getId() {
