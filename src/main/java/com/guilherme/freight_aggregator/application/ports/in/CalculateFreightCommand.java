@@ -4,6 +4,7 @@ public record CalculateFreightCommand(
         String cepOrigem,
         String CepDestino,
         double larguraCm,
+        double alturaCm,
         double comprimentoCm,
         double pesoKg
 ) {
