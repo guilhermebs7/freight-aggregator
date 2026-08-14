@@ -12,7 +12,7 @@ public class FreightQuote {
     private final List<FreightOption> opcao;
     private final LocalDateTime criadoEm;
 
-    public FreightQuote( Address origem, Address destino, PackageDimension dimensaoEmbalagem, List<FreightOption> opcao, LocalDateTime criadoEm) {
+    public FreightQuote( Address origem, Address destino, PackageDimension dimensaoEmbalagem, List<FreightOption> opcao) {
         this.id = UUID.randomUUID().toString();
         this.origem = origem;
         this.destino = destino;
