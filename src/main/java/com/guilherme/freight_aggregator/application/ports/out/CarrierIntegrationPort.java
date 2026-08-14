@@ -1,4 +1,4 @@
-package com.guilherme.freight_aggregator.application.ports.in;
+package com.guilherme.freight_aggregator.application.ports.out;
 
 import com.guilherme.freight_aggregator.domain.model.Address;
 import com.guilherme.freight_aggregator.domain.model.FreightOption;
