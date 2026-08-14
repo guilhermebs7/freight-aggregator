@@ -25,5 +25,5 @@ jobs:
        run: chmod +x ./mvnw
 
      - name: Build and Test with Maven
-       run: ./mvnw clean veriy
+       run: ./mvnw clean verify
 
