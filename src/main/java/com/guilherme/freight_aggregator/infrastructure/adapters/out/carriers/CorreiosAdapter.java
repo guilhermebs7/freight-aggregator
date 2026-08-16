@@ -13,7 +13,7 @@ public class CorreiosAdapter implements CarrierIntegrationPort {
         try {
             // aqui seria feita a chamada HTTP para API dos Correios.
             // Simulação de cálculo baseado no peso efeitivo
-            double preco= 20.0 + (dimensaoPacote.obterPesoEfetivo() * 4.5);
+            double preco= 20.0 + (dimensaoPacote.obterPesoEfetivo()* 4.5);
             int diaEntrega=5;
 
              return Optional.of(new FreightOption("Correios", "SEDEX",preco,diaEntrega));
