@@ -8,11 +8,11 @@ public record PackageDimension(double larguraCm,double alturaCm, double comprime
         }
     }
 
-    public double getObterPesoCubico(){                                      // Cálculo do peso cubado( Fator de cubagem padrão: 6000)
+    public double obterPesoCubico(){                                      // Cálculo do peso cubado( Fator de cubagem padrão: 6000)
         return (larguraCm * alturaCm * comprimentoCm) / 6000.0;
     }
 
-    public double getObterPesoEfetivo(){
-        return Math.max(pesoKg, getObterPesoCubico());
+    public double obterPesoEfetivo(){
+        return Math.max(pesoKg, obterPesoCubico());
     }
 }
